@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LidMate - Coming Soon</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --coral: #FF5E4D;
+            --forest-green: #3B8E59;
+            --mint-green: #8CCB9F;
+            --text-white: #FFFFFF;
+            --text-grey: #A0A0A0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+           
+            background-image: url('LidMate Logo1.png');
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: var(--mint-green);
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--text-grey);
+            margin-bottom: 40px;
+            max-width: 400px;
+        }
+
+        .store-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            cursor: not-allowed;
+            opacity: 0.6;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .apple { background-color: var(--text-white); color: #000; }
+        .google { background-color: #222; color: var(--text-white); border: 1px solid var(--forest-green); }
+
+        footer {
+            padding: 40px 20px;
+            border-top: 1px solid #1a1a1a;
+            background-color: #050505;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--text-grey);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--mint-green);
+        }
+
+        .contact-box {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+        }
+
+        .contact-box a {
+            color: var(--coral);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="logo"></div>
+        <h1>LidMate</h1>
+        <p>A new vision for your wellness. Coming soon to the App Store and Google Play.</p>
+        
+        <div class="store-buttons">
+            <a href="#" class="btn apple">App Store</a>
+            <a href="#" class="btn google">Google Play</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
+        </div>
+        <div class="contact-box">
+            Questions? Email us at <a href="mailto:support@lidmate.app">support@lidmate.app</a>
+        </div>
+    </footer>
+
+</body>
+</html>
